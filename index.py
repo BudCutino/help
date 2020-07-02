@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 import json
-
+from fn import b
 class handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
@@ -9,7 +9,8 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Content-type", "application/json")
         self.end_headers()
 
-        response = {"hello": "world"}
+        response = {"hello": b()}
+    
         self.wfile.write(json.dumps(response).encode("utf-8"))
 
         return
