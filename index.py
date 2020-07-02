@@ -4,8 +4,8 @@ from fn import b
 
 class handler(BaseHTTPRequestHandler):
 
-    message = "Hello World"
-
+    message = str(b())
+    
     def do_GET(self):
 
         self.send_response(200)
