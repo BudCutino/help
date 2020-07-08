@@ -1,5 +1,8 @@
 {
     "version": 2,
-    "name": "buds-server"
-    
+    "name": "buds-server", 
+    "builds": [
+        { "src": "*.py", "use": "@now/python" , "config": { "maxLambdasize}: "10mb" } }
+    ]
+
 }
