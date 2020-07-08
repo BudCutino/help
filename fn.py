@@ -1,4 +1,4 @@
-#%%
+
 
 def b():
     
@@ -10,3 +10,5 @@ def b():
     print(" ")
     print("Refresh for another random number.")
 b()
+
+
